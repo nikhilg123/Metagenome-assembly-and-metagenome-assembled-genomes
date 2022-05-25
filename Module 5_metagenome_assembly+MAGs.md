@@ -182,7 +182,7 @@ Rscript ~/CourseData/Module5/Data/FeGenie_scripts/dendro-heatmap.R fegenie_out/F
 ```
 Rscript ~/CourseData/Module5/Data/FeGenie_scripts/DotPlot.R fegenie_out/FeGenie-heatmap-data_processed.csv fegenie_out
 ```
-Open the .tiff files in your browser (these will be located in your fegenie_out directory, which should have been created in your workspace)
+Find the .tiff files through the browser link to your workspace. Click on them to begin download and open them for viewing (the .tiff files will be located in your fegenie_out directory at ~/workspace/Module5/fegenie_out)
 
 *Q: Which iron cycling functions are more strongly represented in the data: oxidation or reduction? Is there the potential for iron cycling or hand-offs within the community?*
 
