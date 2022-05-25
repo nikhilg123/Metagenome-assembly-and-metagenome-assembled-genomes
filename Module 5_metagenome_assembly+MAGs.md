@@ -160,7 +160,7 @@ You will see two linked displays. On the left is a heat map showing central carb
 
 FeGenie is a program that specifically examines the presence of iron-cycling genes within a genome or genomes of interest (7). If DRAM incorporated it, it would be displayed as an additional blue/green presence/absence map, but as DRAM does not, and because our bioreactor was specifically fed an iron-rich enrichment medium, we will examine which organisms are involved in iron cycling using this more boutique functional analysis tool.
 
-Run FeGenie:
+Run FeGenie (make sure to run FeGenie in your workspace directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
@@ -168,18 +168,16 @@ When FeGenie has completed (~17 minutes):
 
 Edit the /fegenie_output/FeGenie-heatmap-data.csv file to have no trailing commas (no last comma on each line):
 ```
-nano fegenie_out/FeGenie-heatmap-data.csv
+sed 's/,$//' fegenie_out/FeGenie-heatmap-data.csv > fegenie_out/FeGenie-heatmap-data_processed.csv
 ```
-You can position your cursor where you need it to be using "option" on a MAC and "Alt" on a PC. Save your output when done ("Ctrl+x" to exit, and "y" to the prompt if you want to save).
-
 Run the associated visualization scripts for FeGenie:
 ```
-Rscript ~/CourseData/Module5/Data/FeGenie_scripts/dendro-heatmap.R fegenie_out/FeGenie-heatmap-data.csv fegenie_out
+Rscript ~/CourseData/Module5/Data/FeGenie_scripts/dendro-heatmap.R fegenie_out/FeGenie-heatmap-data_processed.csv fegenie_out
 ```
 ```
-Rscript ~/CourseData/Module5/Data/FeGenie_scripts/DotPlot.R fegenie_out/FeGenie-heatmap-data.csv fegenie_out
+Rscript ~/CourseData/Module5/Data/FeGenie_scripts/DotPlot.R fegenie_out/FeGenie-heatmap-data_processed.csv fegenie_out
 ```
-Copy the .tiff files that were generated to your workspace and view them – these will be located in your fegenie_out directory.
+Open the .tiff files and view them (these will be located in your fegenie_out directory, which should have been created in your workspace)
 
 *Q: Which iron cycling functions are more strongly represented in the data: oxidation or reduction? Is there the potential for iron cycling or hand-offs within the community?*
 
