@@ -141,7 +141,7 @@ DRAM.py distill -i ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/
 Make a directory for Module 5 work to keep everything tidy and enter that directory
 
 ```
-mkdir ~/workspace/Module5 && cd  ~/workspace/Module5 
+mkdir ~/workspace/Module5 && cd ~/workspace/Module5 
 ```
 
 Copy the product.html file from the DRAM distillation to your workspace for Module 5, and then open it in your web browser (drag and drop or click the filename).
