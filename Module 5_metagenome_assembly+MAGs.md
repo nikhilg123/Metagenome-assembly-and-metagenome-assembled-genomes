@@ -142,7 +142,7 @@ Copy the product.html file found at
 ```
 ~/CourseData/Module5/Data/High_QC_bins_annotation/genome_summaries/product.html
 ```
-to your workspace, and then open it in your web browser (drag and drop).
+to your workspace, and then open it in your web browser (drag and drop or click the filename).
 
 You will see two linked displays. On the left is a heat map showing central carbon metabolism (Glycolysis, Pentose Phosphate Pathway, TCA cycle, electron transport chain). On the right are presence/absence plots of specific functions involved in carbohydrate metabolism, Nitrogen and Sulfur cycling, and other key functions. Hover over a cell for more information.
 
