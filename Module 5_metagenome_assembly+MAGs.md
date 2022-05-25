@@ -138,7 +138,7 @@ We distilled the data (example command, do not run):
 DRAM.py distill -i ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv -o genome_summaries --trna_path ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/trnas.tsv --rrna_path ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/rrnas.tsv
 ```
 
-Make a directory for Module 5 work to keep everything tidy and enter that directory
+Before you go further, make a directory for Module 5 work to keep everything tidy and enter that directory
 
 ```
 mkdir ~/workspace/Module5 && cd ~/workspace/Module5 
