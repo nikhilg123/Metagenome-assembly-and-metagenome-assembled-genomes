@@ -138,12 +138,17 @@ We distilled the data (example command, do not run):
 DRAM.py distill -i ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv -o genome_summaries --trna_path ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/trnas.tsv --rrna_path ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/rrnas.tsv
 ```
 
-Copy the product.html file found at 
-```
-~/CourseData/Module5/Data/High_QC_bins_annotation/genome_summaries/product.html
-```
-to your workspace, and then open it in your web browser (drag and drop or click the filename).
+Make a directory for Module 5 work to keep everything tidy and enter that directory
 
+```
+mkdir ~/workspace/Module5 && cd  ~/workspace/Module5 
+```
+
+Copy the product.html file from the DRAM distillation to your workspace for Module 5, and then open it in your web browser (drag and drop or click the filename).
+
+```
+cp ~/CourseData/Module5/Data/High_QC_bins_annotation/genome_summaries/product.html ~/workspace/Module5
+```
 You will see two linked displays. On the left is a heat map showing central carbon metabolism (Glycolysis, Pentose Phosphate Pathway, TCA cycle, electron transport chain). On the right are presence/absence plots of specific functions involved in carbohydrate metabolism, Nitrogen and Sulfur cycling, and other key functions. Hover over a cell for more information.
 
 *Q: Do all MAGs have a complex IV (cytochrome C oxidase) in their genomes? This is a hallmark gene for aerobic metabolism – organisms missing this are often obligate anaerobes.*
