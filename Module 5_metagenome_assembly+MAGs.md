@@ -111,7 +111,7 @@ DRAM.py annotate -i ~/CourseData/Module5/Data/High_QC_bins/*.fas' -o ~/CourseDat
 
 Examine the format of the annotations file (DO run!):
 ```
-head ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv
+head ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv | less -S 
 ```
 You will see many columns, with one row per gene. Genes have been called using prodigal, and are numbered based on their location on their scaffold.
 
