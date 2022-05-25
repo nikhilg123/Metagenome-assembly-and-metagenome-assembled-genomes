@@ -166,7 +166,7 @@ FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ex
 ```
 When FeGenie has completed (~17 minutes):
 
-Edit the /fegenie_output/FeGenie-heatmap-data.csv file to have no trailing commas (no last comma on each line):
+Edit the fegenie_output/FeGenie-heatmap-data.csv file to have no trailing commas (no last comma on each line):
 ```
 sed 's/,$//' fegenie_out/FeGenie-heatmap-data.csv > fegenie_out/FeGenie-heatmap-data_processed.csv
 ```
