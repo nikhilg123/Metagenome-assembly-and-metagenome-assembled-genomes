@@ -122,13 +122,13 @@ This annotations.tsv file is incredibly important for assigning metabolic functi
 If you have a function of interest, you can search for it directly:
 
 ```
-grep "pyruvate kinase" ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv
+grep "pyruvate kinase" ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv | less -S
 ```
 ```
-grep "iron reductase" ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv
+grep "iron reductase" ~/CourseData/Module5/Data/High_QC_bins_annotation/annotation/annotations.tsv | less -S
 ```
 
-*Q: Compare the frequency of these two functions. Observe whether bins have one or more of these annotated proteins (remember, the bin name is at the front of the gene ID).*
+*Q: Compare the frequency of these two functions. Observe whether bins have one or more of these annotated proteins (remember, the bin name is at the front of the gene ID [first column] and is also in the second column).*
 
 However, the annotations.tsv file is bulky and difficult to interpret without a deep knowledge of microbial metabolism or an _a priori_ expectation of what you are looking for. The DRAM distilled files are more user-friendly.
 
