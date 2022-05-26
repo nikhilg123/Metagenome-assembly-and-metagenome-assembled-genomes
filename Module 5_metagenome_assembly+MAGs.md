@@ -347,7 +347,7 @@ Then we used that information as input to the binning:
 ```
 /METABAT/berkeleylab-metabat-d764aa1ece13/metabat2 -i 2.5k_scaffolds/T0_scaffolds_2.5K.fasta -a mapping/T0_depth.txt -t 64 -o bins/T0/
 ```
-MetaBAT2 hides all output files as .bin1.fas – it&#39;s weird, and can be disconcerting, as your output folder will appear empty with a normal ls command. Make the files visible like so:
+Some versions of MetaBAT2 hide all output files as .bin1.fas – it&#39;s weird, and can be disconcerting, as your output folder will appear empty with a normal ls command. Make the files visible like so:
 ```
 rename 's/\.//;' .*
 ```
