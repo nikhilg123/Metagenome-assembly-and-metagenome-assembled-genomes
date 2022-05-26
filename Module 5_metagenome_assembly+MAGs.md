@@ -210,7 +210,7 @@ This should take ~10 minutes.
 
 We can view the trees using either iTOL ([https://itol.embl.de/upload.cgi](https://itol.embl.de/upload.cgi)) or TreeView ([http://etetoolkit.org/treeview/](http://etetoolkit.org/treeview/)).
 
-Upload the  .tre file that GToTree has generated to one of these viewers and examine them.
+Upload the  .tre file that GToTree has generated to one of these viewers and examine them (the .tre file will be at ~/workspace/Module5/GToTree_output).
 
 *Q: From the tree, what patterns do you see in terms of distribution of MAGs and their (a) taxonomy and (b) sample of origin? Is there evidence that MAGs are duplicated in this dataset?*
 
