@@ -206,7 +206,7 @@ Run GToTree to make a tree containing only our MAGs. Leaf taxa will automaticall
 ```
 GToTree -f GtoTree_fasta_files.txt -H Universal_Hug_et_al.hmm
 ```
-This should take about 9 minutes. 
+This should take ~10 minutes. 
 
 We can view the trees using either iTOL ([https://itol.embl.de/upload.cgi](https://itol.embl.de/upload.cgi)) or TreeView ([http://etetoolkit.org/treeview/](http://etetoolkit.org/treeview/)).
 
