@@ -169,7 +169,7 @@ Run FeGenie (make sure to run FeGenie in your ~/workspace/Module5 directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
-When FeGenie has completed (~17 minutes):
+When FeGenie has completed (~20 minutes):
 
 Edit the fegenie_output/FeGenie-heatmap-data.csv file to have no trailing commas (no last comma on each line):
 ```
