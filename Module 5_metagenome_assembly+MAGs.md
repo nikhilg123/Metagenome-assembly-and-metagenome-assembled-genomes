@@ -165,7 +165,7 @@ You will see two linked displays. On the left is a heat map showing central carb
 
 FeGenie is a program that specifically examines the presence of iron-cycling genes within a genome or genomes of interest (7). If DRAM incorporated it, it would be displayed as an additional blue/green presence/absence map, but as DRAM does not, and because our bioreactor was specifically fed an iron-rich enrichment medium, we will examine which organisms are involved in iron cycling using this more boutique functional analysis tool.
 
-Run FeGenie (make sure to run FeGenie in your workspace directory):
+Run FeGenie (make sure to run FeGenie in your ~/workspace/Module5 directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
