@@ -169,6 +169,8 @@ Run FeGenie (make sure to run FeGenie in your ~/workspace/Module5 directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
+---------------------------------------------OPTIONAL------------------------------------------------
+
 Optional exercise while FeGenie runs (FeGenie takes ~20 minutes) **only if nearly everyone is caught up**. Read Coverage as a Proxy for Abundance
 
 Let’s look at enrichment of a novel group, the Krumholzibacteria, over time in the bioreactor.
@@ -192,6 +194,7 @@ samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_
 ```
 samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average Bin 12 coverage = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average Bin 23 coverage = ",sum/NR}'
 ```
+---------------------------------------------OPTIONAL------------------------------------------------
 
 When FeGenie has completed (~20 minutes):
 
