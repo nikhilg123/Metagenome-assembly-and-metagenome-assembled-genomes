@@ -178,19 +178,19 @@ We can do this by generating coverage information using Bowtie2 - .bam files has
 Bowtie indices were built for each Krumholzibacteria MAG.
 
 ```
-samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average Bin 12 coverage = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average Bin 23 coverage = ",sum/NR}'
 
 ```
 ```
-samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average Bin 12 coverage = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average Bin 23 coverage = ",sum/NR}'
 ```
 
 ```
-samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average Bin 12 coverage = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average Bin 23 coverage = ",sum/NR}'
 ```
 
 ```
-samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average Bin 12 coverage = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average Bin 23 coverage = ",sum/NR}'
 ```
 
 When FeGenie has completed (~20 minutes):
