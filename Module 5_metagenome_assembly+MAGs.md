@@ -169,7 +169,7 @@ Run FeGenie (make sure to run FeGenie in your ~/workspace/Module5 directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
-------------------------------------------------------------------OPTIONAL----------------------------------------------------------------
+---------------------------------------------------------------OPTIONAL----------------------------------------------------------------
 
 Optional exercise while FeGenie runs (FeGenie takes ~20 minutes) **only if nearly everyone is caught up**. Read Coverage as a Proxy for Abundance
 
