@@ -169,6 +169,30 @@ Run FeGenie (make sure to run FeGenie in your ~/workspace/Module5 directory):
 ```
 FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ext fas -t 4
 ```
+Optional exercise while FeGenie runs (only if nearly everyone is caught up). Read Coverage as a Proxy for Abundance
+
+Let’s look at enrichment of a novel group, the Krumholzibacteria, over time in the bioreactor.
+The Krumholzibacteria were named in 2018, after Professor Lee Krumholz to recognize his contribution to the fields of diversity, genetics, and physiology of anaerobes in multiple habitats, including Zodletone spring, from which the type strain of Krumholzibacteriota was identified, as a MAG (18).
+
+We can do this by generating coverage information using Bowtie2 - .bam files has been precomputed.
+Bowtie indices were built for each Krumholzibacteria MAG.
+
+```
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T0_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+
+```
+```
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T1_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+```
+
+```
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2A_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+```
+
+```
+samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2A_bin12.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}' && samtools depth ~/CourseData/Module5/Data/Krumholzibacteriota_bowtie_mapping/T2B_to_Krumholzibacteriota_Krumholzibacteria_T2B_bin23.sorted.bam | awk '{sum+=$3} END { print "Average = ",sum/NR}'
+```
+
 When FeGenie has completed (~20 minutes):
 
 Edit the fegenie_output/FeGenie-heatmap-data.csv file to have no trailing commas (no last comma on each line):
