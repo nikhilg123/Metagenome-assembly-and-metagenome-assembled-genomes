@@ -171,7 +171,9 @@ FeGenie.py -bin_dir ~/CourseData/Module5/Data/High_QC_bins_with_taxonomy -bin_ex
 ```
 ---------------------------------------------------------------OPTIONAL----------------------------------------------------------------
 
-Optional exercise while FeGenie runs (FeGenie takes ~20 minutes) **only if nearly everyone is caught up**. Read Coverage as a Proxy for Abundance
+Optional exercise while FeGenie runs (FeGenie takes ~20 minutes) **only if nearly everyone is caught up**. 
+
+Read Coverage as a Proxy for Abundance
 
 Let’s look at enrichment of a novel group, the Krumholzibacteria, over time in the bioreactor.
 The Krumholzibacteria were named in 2018, after Professor Lee Krumholz to recognize his contribution to the fields of diversity, genetics, and physiology of anaerobes in multiple habitats, including Zodletone spring, from which the type strain of Krumholzibacteriota was identified, as a MAG (18).
